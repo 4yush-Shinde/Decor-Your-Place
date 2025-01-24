@@ -1,0 +1,234 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+
+
+  @font-face {
+    font-family: 'Recoleta';
+    src: url('Fonts/recoleta-regulardemo.otf') format('truetype'),
+         url('Fonts/recoleta-regulardemo.otf') format('truetype'),
+         /* Add more font files as needed */
+  }
+
+
+  
+  /* Navigation Bar */
+  header {
+    position: fixed;
+    top: 10px;
+    width: 80%;
+    background: #3333331b;
+    padding: 15px 0;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    margin-left: 170px;
+    border-radius: 15px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    font-size: 20px;
+    margin: 0 35px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ff0000;
+  }
+  
+  /* Sections */
+  /* section {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  } */
+  
+  section {
+ /* Prevents the image from repeating */
+     min-height: 100vh;
+     display: flex; /* Optional: Center content in the section */
+    justify-content: center; /* Optional: Center horizontally */
+    align-items: center; /* Optional: Center vertically */
+    color: white; /* Optional: Text color for visibility */
+    text-align: center;
+    flex-direction: column;
+
+  }
+
+  #home {
+    background: #f4f4f4;
+    min-height: 70vh;
+    background-image: url('Images/1.1.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Makes the image cover the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    flex-direction: row;
+ 
+  }
+
+#img2{
+  width: 250px;
+  height: auto;
+  margin-right: 500px;
+  border: 3px solid beige;
+}
+
+
+
+
+
+  
+  #projects {
+    background: #ddd;
+  }
+  
+  #about {
+    background: #bbb;
+  }
+  
+  #contact {
+    background: #999;
+  }
+  
+
+  #company-name {
+    margin-left: 10px;
+    font-size: 35px;
+    /* color: rgb(234, 234, 51); */
+    color: rgb(216, 234, 51);
+
+    font-family: 'Recoleta', sans-serif;
+
+  }
+
+  /* img, video {
+    max-width: 100%; /* Ensures media never exceeds the container */
+    height: auto; /* Maintains aspect ratio */
+  } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 360px) {
+    .sidebar {
+      display: none; /* Hide unnecessary elements on small screens */
+    }
+    .main-content {
+      width: 100%;
+    }
+
+    .phone-header {
+      visibility: collapse;
+    }
+  }
+
+
+
+
+
+
+
+
+/* Samsung S20 Ultra */
+  @media screen and (max-width: 412px) {
+    .sidebar {
+      display: none; /* Hide unnecessary elements on small screens */
+    }
+    .main-content {
+      width: 100%;
+    }
+
+    .phone-header {
+      visibility: collapse;
+    }
+
+    #home {
+      background: #f4f4f4;
+      min-height: 70vh;
+      background-image: url('Images/1.2.jpg'); /* Replace with your image URL */
+      background-size: cover; /* Makes the image cover the entire section */
+      background-position: center; /* Centers the image */
+      background-repeat: no-repeat;
+      flex-direction: column;
+
+    }
+
+
+#welcome {
+  padding: 0;
+  margin-top: 150px;
+  margin-bottom: auto;
+}
+
+#company-name {
+  margin-bottom: 380px;
+  margin-top: auto;
+  font-family: 'Recoleta', sans-serif;
+}
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 712px) {
+    .sidebar {
+      display: none; /* Hide unnecessary elements on small screens */
+    }
+    .main-content {
+      width: 100%;
+    }
+
+    .phone-header {
+      visibility: collapse;
+    }
+  }
+
+
+  
