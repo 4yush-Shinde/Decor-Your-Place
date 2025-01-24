@@ -77,26 +77,42 @@ body {
 
   }
 
-  #home {
-    background: #f4f4f4;
-    min-height: 70vh;
-    background-image: url('Images/1.1.jpg'); /* Replace with your image URL */
-    background-size: cover; /* Makes the image cover the entire section */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat;
-    flex-direction: row;
- 
-  }
 
-#img2{
-  width: 250px;
-  height: auto;
-  margin-right: 500px;
-  border: 3px solid beige;
+
+
+/* Dynamic Text */
+#dynamic-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  overflow: hidden; /* Ensures text doesn't overflow the container */
+  white-space: nowrap; /* Prevents line breaks */
+  position: relative;
+  display: inline-block;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  transform: translateX(100%); /* Start off-screen (right) */
+  opacity: 0; /* Start invisible */
+}
+
+#dynamic-text.show {
+  transform: translateX(0); /* Slide into view */
+  opacity: 1; /* Make visible */
 }
 
 
 
+
+
+#home {
+  background: #f4f4f4;
+  min-height: 80vh;
+  background-image: url('Images/1.1.jpg'); /* Replace with your image URL */
+  background-size: cover; /* Makes the image cover the entire section */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat;
+  flex-direction: column;
+
+}
 
 
   
@@ -112,21 +128,21 @@ body {
     background: #999;
   }
   
+  #welcome {
+    padding: 0;
+    margin-top: 150px;
+    margin-bottom: auto;
+  }
 
   #company-name {
-    margin-left: 10px;
     font-size: 35px;
     /* color: rgb(234, 234, 51); */
     color: rgb(216, 234, 51);
-
     font-family: 'Recoleta', sans-serif;
-
+    margin-bottom: auto;
+    margin-top: -250px;
   }
 
-  /* img, video {
-    max-width: 100%; /* Ensures media never exceeds the container */
-    height: auto; /* Maintains aspect ratio */
-  } */
 
 
 
@@ -183,7 +199,7 @@ body {
       background-position: center; /* Centers the image */
       background-repeat: no-repeat;
       flex-direction: column;
-
+      
     }
 
 
@@ -194,7 +210,7 @@ body {
 }
 
 #company-name {
-  margin-bottom: 380px;
+  margin-bottom: 395px;
   margin-top: auto;
   font-family: 'Recoleta', sans-serif;
 }
